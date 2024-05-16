@@ -1,0 +1,41 @@
+All servers and computers are identified by their ip.
+
+Everyb device on internet has an ip address. 
+# Format =  X.X.X.X   and each X can have numbers ranging from 0 to 255.
+
+ISP (internet service provider)  --> Modem/Router (it has a global ip address which is going to be same for all the devices connected to it)
+--> Devices (differant devices connected to the router will also be given a local ip address which will be differant by dhcp-dynamic host conf. protocol) 
+
+The request made by any of the device will go through the ip of the modem. on getting response the modem will decide which device sent the request. 
+
+# Ports  
+The ip address helps to identify the device to which the data will be transferred. 
+* The port number helps to identify the app/program to send the data. 
+
+* Ports are 16 Bit number so total possible port numbers are 2^16 (approx 65,000). 
+* All the HTTP stuff happens on port 80. 
+* MONGO DB has a port number of 27017. 
+* Port number 0 - 1023  are reserved ports.
+* 1024 - 49152 are also registered to some applications
+* Sql server has a port of 1433. 
+
+# Speed 
+mega bits per second that is 10^6 bits / second. 
+
+# Guided way and unguided way of communication
+* Two computers are connected via wires- guided way (faster)
+
+* Two computers are not connected - wifi / Bluetooth /3G/4G/LTE - unguided way 
+
+* The countries in the world are connected via wires under the ocean. (submarine cable map website) (managed in india by tata) (The one which connects india runs from france,uae,india,japan,korea).
+
+* LAN - local area network.    (Locality)
+* MAN - metropolitan area network  (cities)
+* WAN - wide area network (countires)
+* SoNET - synchronous optical networking - carry network via optic cables (larger area)
+* frame realy - way to connect lan to wan. 
+ 
+
+* modem can convert a digital signal into analog signal.  
+* router is a device which routes the data packet based on their ip addresses. 
+
