@@ -47,6 +47,15 @@ this protocol uses tcp for transport layer as we need to preserve all data
 The sender sends the email and it moves to smtp server where it lives and makes a connection with the receivers smtp server and gets transferred via tcp.  when receiver opens its email application layer the emails are downloaded from the server and received. 
 * If both are using same servers(eg gmail.com) then they are directly transferred. 
 
+you can use command for looking name and ip of a smtp server  
+nslookup -type=mx gmail.com(server name)
+
+The receiving protocol POP (post office protocol)
+* first the client connects to it . The port is 110. 
+* the client asks the pop server to get all the emails 
+
+* IMAP - internet message access protocol - allows you to see emails on multiple devices. 
+
 
 
 

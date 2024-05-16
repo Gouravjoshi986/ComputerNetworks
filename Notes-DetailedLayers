@@ -36,3 +36,8 @@ Server - high availability must be there
 * sockets = interface between a process and the internet 
 * ports = if many processes are working in one application. then ephemeral ports are used to identify which process do we need to send the data to.   
 The ephemeral ports are assigned by the application randomly on client side. 
+
+* other points in application layer are dns / http smtp pop protocols
+
+# Transport Layer 
+

@@ -1,0 +1,25 @@
+# DNS - domain name system 
+domain names are easy names which are given to ips for easy access. (mapped to ip addresses)
+
+* when you type google. com it will use dns to find the ip address of the google server. 
+
+mail.google.com |---> top level domain
+|_|  |__|
+ |    |---> second level domain / main domain 
+sub domain
+
+* Root Dns server = (root servers.org)
+-- Manage domain names for the entire internet and are located at the top of the Domain Name System (DNS) hierarchy. They contain the root zone, which is a list of all TLDs, including generic TLDs like .com and .net, and country code TLDs like .is and .us. Root servers can answer queries for records in the root zone and refer other requests to the appropriate TLD server.
+
+ eg.)  .com .io .org 
+ * the top level domains are managed and stored by ICANN ( internet coorporation for assigned names and numbers) A part of the DNS, TLDs are one step below root servers in the DNS hierarchy. TLDs include generic TLDs like .com and .net, and country code TLDs (ccTLDs) like .is and .us. 
+
+ # what will happen when you write google.com 
+ * first it will check own computer for ip address in local cache.
+ * then it looks it in local dns server. (first point of contact)
+ * then it will check the root level server
+ * then it will check in top level domain.
+ * on finding it will connect to the server
+
+You can use command  : dig domain name
+to do a dns lookup (dig = domain information groper) 
