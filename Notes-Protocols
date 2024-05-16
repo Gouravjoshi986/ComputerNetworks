@@ -37,3 +37,18 @@ classes  -->  1XX - informational
               4XX - client error 
               5XX - server error 
 
+
+# Cookie 
+Unique string stored in clients browser 
+* Third party cookies - for websites that you do not visit ( by ads of visited websites who use cookies of that website )
+
+# SMTP - for sending email POP3 - for receiving email  
+this protocol uses tcp for transport layer as we need to preserve all data 
+The sender sends the email and it moves to smtp server where it lives and makes a connection with the receivers smtp server and gets transferred via tcp.  when receiver opens its email application layer the emails are downloaded from the server and received. 
+* If both are using same servers(eg gmail.com) then they are directly transferred. 
+
+
+
+
+
+
