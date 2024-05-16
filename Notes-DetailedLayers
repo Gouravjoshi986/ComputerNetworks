@@ -1,0 +1,38 @@
+# TCP / IP Model 
+
+also known as internet protocol suit
+similar to osi model but layers are reduced. 
+
+1. Application
+2. Transport 
+3. Network
+4. Data Link 
+5. Physical 
+
+* this is used practically while the osi model is a theoretical concept. 
+
+# Application layer
+
+- main layer that the user interact with. 
+- whatsapp/browser etc. 
+- lies on our devices 
+
+connection type 
+1. client server architecture
+Server - high availability must be there 
+
+2. Peer to peer architecture - clients are connected to each other no big data center or server.  Key advantage is we can scale it very rapidly . A good example is bit torrent. 
+
+* some networking devices 
+1. repeater - its main job is to regenerate a signal over same network when it becomes too weak to transmit over longer distance. it doesnt amplifies the signal it just regenerates it bit by bit. 
+2. Hub -  it is a multi port repeater. ( repeater is 2 port)   -> hub is of two types active(own power supply used for extending distance) and passive(cant be used to extend distance)
+3. Bridge - a type of repeater with added functionality of filtering by reading mac addresses. used at data link layer. 
+4. Switch - multi port bridge (very efficient)
+5. Router - at network layer to route the packets as per ip addresses
+6. Gateway - Passage to connect two networks together ,works as a messenger agent to take data from one system to another, also called protocol convertors. 
+7. Brouter - bridging router 
+
+
+* sockets = interface between a process and the internet 
+* ports = if many processes are working in one application. then ephemeral ports are used to identify which process do we need to send the data to.   
+The ephemeral ports are assigned by the application randomly on client side. 

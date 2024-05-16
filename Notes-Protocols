@@ -1,0 +1,39 @@
+# Web protocols
+TCP / IP 
+ * HTTP     - defines how data is transferred
+ * DHCP     - allocates ip addresses to devices connected to our network 
+ * FTP - file transfer protocol 
+ * SMTP - simple mail transfer protocol - to send the e mails
+ * POP3 and IMAC - to receive the emails
+ * SSH , VNC 
+ * UDP  - stateless connection -data may be lost
+Telnet - port 23 - terminal emulation ,allows user to connect to a host using telnet client 
+
+# HTTP 
+It is a client server protocol which defines how a client will send a request to a server (http request) and how a server will respond (http response). 
+
+HTTP is a application layer protocol. 
+It has some methods eg. GET POST DELETE PUT etc
+Get - you are requesting some data
+post - giving something to server to process
+put - updating something in server
+delete - delete data from the server 
+
+Every application layer protocol needs a transport layer protocol( TCP and UDP ). 
+
+Http uses Tcp inside it. 
+It is a stateless protocol and server doesnt store any info about the client. `
+
+
+# Status codes 
+200 - all good 
+404 - cant find 
+400 - bad request 
+500 - internal server error 
+
+classes  -->  1XX - informational
+              2XX - success
+              3XX - redirection purpose
+              4XX - client error 
+              5XX - server error 
+
