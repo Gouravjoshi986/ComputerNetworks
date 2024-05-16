@@ -1,0 +1,26 @@
+# ARPANET  
+* It is the network developed by arpa(Advanced research project agency) of america to communicate with each other. 
+they connected 4 corners namely (Mit, Stanford, Ucla, Utah) they used tcp to communicate with each other. 
+
+# Protocols = a set of rules.  
+* A differant set of rules for differant kind of programs / operations on internet.
+
+As time progressed many more computers were added to the arpanet which resulted in what we have today. 
+
+# WWW - world wide web 
+* A project originally developed to accomodate links in documents. (Linking one document to another on the web) 
+Its a collection of all the pages. 
+
+# client server architecture 
+Sending of a request by a client to a server and getting a response from the server to the client. 
+
+# Basic Protocols (Brief)
+1. TCP - Transmission control protocol  
+* Used when you want to send the data without any losses or corruption. 
+2. UDP - User datagram protocol 
+* used when you do not care about the transfer of complete data. (it can allow some losses). (eg video calls). 
+3. HTTP - Hypertext transfer protocol 
+* used by www. defines the format of data that is being transfered between client and servers. 
+
+* Data is transferred in packets and not in a large chunk of 0 and 1.
+
