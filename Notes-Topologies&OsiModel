@@ -1,0 +1,65 @@
+# Topologies 
+
+1. Bus - every system is connected to a single line. (main branch) (since everything is transmitted via a cable only one person can send data at a time) (if it gets broken network will shut down)
+
+2. Ring - connected in a ring fashion. every system communicates with one another.
+if two computers need to communicate they need to go through all computers between them. (if it gets broken network will shut down)
+(lot of unnecessary calls)
+
+3. Star - one central device to which all the computers are connected. (comunication via central device) (if the central device fails network will go down)
+
+4. Tree - combination of bus and star topology
+in a bus everybody can have a star topology.
+
+5. Mesh - every single computer is connected with every single computer. (expensive scalability issues)
+
+# Structure of network 
+eg. 
+Order                          Received        --> application layer
+ |                                |
+Amazon                         Amazon 
+ |                                |
+Delivery company            Delivery company  
+ |                                |
+Transported    ------------>  Transported
+
+
+This is similar to how the internet works. 
+# OSI MODEL  - Open systems interconnection model
+* standard way of how communication happens 
+
+1. Application layer   ---> its implemented in software. the user will interact with it and it contains the application.
+* Data is sent from application layer to presentation layer   
+protocols - http / ftp etc
+
+2. Presentation layer  ---> it gets data and converts the data into machine understandable foramt. this process is called translation. 
+Before next processing the data us encoded/encrypted for protection . 
+* also provides abstraction. 
+data is also compressed. (SSL protocol is used )
+
+3. Session layer  ---> helps in setting up and managing the connections.  helps in sending and receiving the data followed by termination of connected sessions. (authorization and authentication)
+
+4. Transport layer  ---> it makes sure the data is transported successfully. 
+* segmentation - data is divided in small units called segments and every packet contains source and destinations port number and a sequence number to reassemble the data. 
+* Flow control - controls the amount of data that is being transported
+* error control - adds checksum to every segment
+connection oriented transmission - tcp 
+connectionless oriented transmission - udp (faster)
+
+5. Network layer  ---> it works for transmission of data segments from one computer to another that is located in a different network. 
+* This is where the router lives. it performs routing. 
+* its function is logical addressing. 
+ip addressing done in network layer is called logical addressing assigns the sender and receivers ip address and a subnet mask to segment and forms ip packets. 
+* load balancing also happens here 
+
+6. Data link layer  --->  This data packet is converted to physical address (mac address) this is called physical addressing.  
+* mac address is a 12 digit alpha numeric number 
+of network interface. 
+* provides media access control (how data is placed and received from media)
+
+7. Physical link layer  ---> contains hardware / wire etc. transfers electrical or other type of signals. 
+
+So the process will occur as 
+ sender side             Receiver side
+    |                      |
+ 7 OSI LAYERS  -----> 7 OSI LAYERS (reverse)
