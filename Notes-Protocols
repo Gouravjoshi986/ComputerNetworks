@@ -77,9 +77,35 @@ you can see this packets using command
 tcpdump -c 5  --> shows 5 packets 
 
 
+# TCP (transmission control protocol)
+* aplication layer sends lot of raw data. 
+* tcp divides it in segments / add checksums etc.
+* it also collects data from network layer while receiving data. 
+* congestion control 
+takes care of when data doesnt arrive and maintains the order of data 
+
+* features -> 
+connection oriented 
+error control
+congestion control
+bi directional - full duplex -> both computers can send files simultaneously (one tcp connection between only two conenctions) 
+* tcp data packet has a sequence and acknowledgement number added into a header. 
 
 
+# 3 Way handshake -> how connection is made in tcp 
+* client                                  server 
+        ------synchronisation flag------>
+            & sequence number(random for security)
 
+        <-----acknowledgement flag------
+           & a processed sequence number
+           & a ack. no = prev seq + 1
+
+        ------acknowledgement flag------->
+           & a org. sequence no + 1
+           & a ack no = prev seq + 1
+
+After this the connection will be estabilished. 
 
 
 
