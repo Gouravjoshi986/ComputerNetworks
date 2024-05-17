@@ -40,4 +40,28 @@ The ephemeral ports are assigned by the application randomly on client side.
 * other points in application layer are dns / http smtp pop protocols
 
 # Transport Layer 
+- It is responsible for transport of data from application to the network and vice versa. 
+* Multiplexing - it allows us to send data of various types/sources in one go. 
+Transport layer has a multiplexer which allows us to do this. 
 
+* Demultipleixng - vice versa of multiplexing.
+Transport layer has a demultiplexer to achieve this data transfer. 
+It has sockets where data packets are sent and transport layer adds port number to them. 
+* it also takes care of congestion (traffic) control.
+The Transmission Control Protocol (TCP) uses a congestion control algorithm to manage data flow over a network and prevent congestion. The algorithm has three phases:
+* Slow start: The sender increases the congestion window size (cwnd) by one MSS (maximum segment size) after each acknowledgment (ACK).
+* Congestion avoidance: The cwnd increases by one MSS per round-trip time (RTT).
+ Fast recovery: The cwnd increases by one segment for each ACK received after a packet loss is detected. 
+
+* Checksums -  they take care of the ordering of the data packets ( when they are broken into segments they must be joined in order to make sense of the data )
+* check sum is like a number (eg. for a string using some logic you created a number related to that data and this number is attached to the data)
+- This number is called checksum .
+
+* Timer - when you send a data packet a timer will start and when you receive the confirmation back the timer will stop. if not then the timer will expire and we will know that the data packet is lost. This is known as retransmission timer. 
+
+* The duplicate packet problem is solved using A unique number which is given to all of the packets. This number is called sequence number.
+
+# UDP / TCP / 3-way Handshake in other file
+
+# Network Layer 
+- Responsible for transport of data from one network/device to another network/device 

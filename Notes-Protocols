@@ -57,6 +57,28 @@ The receiving protocol POP (post office protocol)
 * IMAP - internet message access protocol - allows you to see emails on multiple devices. 
 
 
+# UDP
+User datagram protocol 
+* data may or may not be delivered 
+* data may change 
+* data may not be in order
+
+* it is a connection-less protocol
+udp uses checksums and it will know that the data has been corrupted but * It is what it is *.
+              _______________________________________________
+* Udp Packet: | source port no          length of datagram  |
+              | destination port no     checksum            | 
+              |_________________Data________________________|
+
+udp packet - data is called the Header . The size of this header is 2*4 = 8 bytes 
+udp is a lot faster.
+* DNS uses udp because its fast. 
+you can see this packets using command 
+tcpdump -c 5  --> shows 5 packets 
+
+
+
+
 
 
 
