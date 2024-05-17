@@ -93,3 +93,18 @@ Two types of routing :
 2. Dynamic routing ---> bellman ford ,dijkstras algo are used 
 
 # Network Layer Protocols are IP ( internet protocols) ( in the protocol file)
+
+# Data Link Layer 
+* data link layer is responsible to send the data packets over to a physical device.  
+* it transfers in frame 
+* whenever a new device is added to router. it connects it to the dhcp server and dhcp server will allocate it an ip address. 
+
+# mac address =  data link layer address
+* at data link layer every device communicates with data link layer address. (mac address)
+# Address resolution protocol (ARP)
+* ARP Cache - a device connected within data link layer will ask for the address (data link add.) to other devices connected within layer.
+* frame contains - data link layer address of source. ip address of destination.  
+* In arp cache it asks for the data link address of the destination
+
+
+# Study set of questions on gfg for complete revision and cover extra topics/points that are not covered here 
