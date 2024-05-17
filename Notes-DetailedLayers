@@ -65,3 +65,31 @@ The Transmission Control Protocol (TCP) uses a congestion control algorithm to m
 
 # Network Layer 
 - Responsible for transport of data from one network/device to another network/device 
+
+- we know  transport layer - segments 
+           network layer - packets 
+           data link layer  - frames
+
+Here we work with routers. 
+each router has its own network address. 
+- A packet will contain network layer address of source and destination and information. 
+- The router will check its router table /forwarding table and send it.  
+* This is called Hop by Hop Forwarding. 
+that is hopping routers by routers until it reaches the correct router. 
+( Forwarding table exist inside a router. it is just like a data structure )
+
+* for an ip   192.168.2.30 ---> this is the device address
+              |_______|
+                 | 
+            this portion is called a network address     
+
+* But who creates these routing tables and adds new routers to tables? --> control plane
+
+Contorl plane is used to build these routing tables. 
+It is like a graph data structure. where routers are nodes and links are edges. 
+
+Two types of routing : 
+1. Static routing  ---> adding addresses manually in the routing table 
+2. Dynamic routing ---> bellman ford ,dijkstras algo are used 
+
+# Network Layer Protocols are IP ( internet protocols) ( in the protocol file)
